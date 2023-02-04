@@ -1,0 +1,15 @@
+CREATE TABLE store (id INTEGER PRIMARY KEY, clothing TEXT, color TEXT, inventory INTEGER, amount INTEGER);
+
+INSERT INTO store VALUES (1, "shorts", "red", 6, 12);
+INSERT INTO store VALUES (2, "tanks", "blue", 4, 8);
+INSERT INTO store VALUES (5, "khakis", "tan", 10, 23);
+INSERT INTO store VALUES (6, "skirts", "black", 7, 20);
+
+(display all products)
+SELECT * FROM store;
+
+(display product with less than 10 items available)
+SELECT * FROM store WHERE inventory <10;
+
+(sort all project by cost amount)
+SELECT * from STORE WHERE amount GROUP BY amount;
